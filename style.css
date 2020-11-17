@@ -20,16 +20,41 @@ a{
     color: cornflowerblue;
 }
 
-#menu{
-    /*position: fixed;*/
-    width: 100%;
+a:hover{
+    text-decoration-line: underline;
 }
 
-#menu div{
+nav, #home, a{
+    height: 4em;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    background: lightblue;
+}
+
+#home{
+    width: 16.6%;
+    padding: 0.5em 0 0.25em 0;
+    border: darkcyan solid 1px;
+    background: black;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+i{
+    font-size: 2em;
+    padding-top: 0.1em;
+}
+
+nav a{
     font-size: 2em;
     width: 16.6%;
-    height: 4em;
-    padding: 1em 0 0 0;
+    padding: 1.2em 0 0 0;
     display: inline-block;
     border: darkcyan solid 1px;
     margin-right: -3px;
@@ -60,23 +85,49 @@ a{
 }
 
 @media screen and (max-width: 850px) {
-    #menu div{
+    nav a{
         font-size: 1.5em;
     }
 }
 
 @media screen and (max-width: 630px){
-    #menu div{
+    nav a{
         font-size: 1em;
     }
 }
 
-@media screen and (max-width: 430px){
-    a #madMax{
-        display: none;
+@media screen and (max-width: 401px){
+    nav a{
+        display: inline-block;
     }
 
-    #menu div{
-        width: 20%;
+@media screen and (max-width: 400px){
+    #home{
+        position: relative;
+        display: block;
     }
+    nav a{
+        display: none
+    }
+
+    nav:hover a{
+        display: block;
+        font-size: 1.5em;
+        width: 50%;
+    }
+
+    i:hover{
+        animation-name: turn;
+        animation-duration: 1s;
+    }
+
+    @keyframes turn {
+        from{
+            transform: rotate(0);
+        }
+        to{
+            transform: rotate(90deg);
+        }
+    }
+}
 }
