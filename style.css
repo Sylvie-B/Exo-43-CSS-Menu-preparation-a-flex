@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+body {
+    width: 100%;
+}
+
+a{
+    text-decoration-line: none;
+}
+
+#menu div{
+    font-size: 2em;
+    width: 16.6%;
+    padding: 1em 0 1em 0;
+    display: inline-block;
+    border: darkcyan solid 1px;
+    background: lightgrey;
+    margin-right: -2px;
+}
