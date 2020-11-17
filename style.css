@@ -8,6 +8,7 @@ html {
     font-size: 62.5%;
     font-family: sans-serif;
     text-align: center;
+    font-weight: bold;
 }
 
 body {
@@ -16,14 +17,66 @@ body {
 
 a{
     text-decoration-line: none;
+    color: cornflowerblue;
+}
+
+#menu{
+    /*position: fixed;*/
+    width: 100%;
 }
 
 #menu div{
     font-size: 2em;
     width: 16.6%;
-    padding: 1em 0 1em 0;
+    height: 4em;
+    padding: 1em 0 0 0;
     display: inline-block;
     border: darkcyan solid 1px;
-    background: lightgrey;
-    margin-right: -2px;
+    margin-right: -3px;
+}
+
+#cobra{
+    background: indigo;
+}
+
+#double{
+    background: darkblue;
+}
+
+#king{
+    background: blue;
+}
+
+#shark{
+    background: lightblue;
+}
+
+#snake{
+    background: cyan;
+}
+
+#madMax{
+    background: teal;
+}
+
+@media screen and (max-width: 850px) {
+    #menu div{
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 630px){
+    #menu div{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 430px){
+    a #madMax{
+        display: none;
+    }
+
+    #menu div{
+        width: 20%;
+    }
 }
