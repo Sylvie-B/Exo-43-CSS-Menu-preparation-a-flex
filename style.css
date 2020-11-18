@@ -57,7 +57,7 @@ nav a{
     padding: 1.2em 0 0 0;
     display: inline-block;
     border: darkcyan solid 1px;
-    margin-right: -3px;
+    margin-left: -3px;
 }
 
 #cobra{
@@ -96,12 +96,7 @@ nav a{
     }
 }
 
-@media screen and (max-width: 401px){
-    nav a{
-        display: inline-block;
-    }
-
-@media screen and (max-width: 400px){
+@media screen and (max-width: 450px){
     #home{
         position: relative;
         display: block;
@@ -130,4 +125,4 @@ nav a{
         }
     }
 }
-}
+
